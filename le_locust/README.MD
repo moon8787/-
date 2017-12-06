@@ -1,21 +1,21 @@
 <center>Locust学习总结</center>
-=======
+-------
 
-#学习网址
+# 学习网址
 [Locust](http://www.testclass.net/locust/)
 [Locust Documentation](https://docs.locust.io/en/latest/index.html)
 
-#locust是什么
+# locust是什么
 locust是一个开源性能测试工具，它使用 Python 代码来定义用户行为。用它可以模拟百万计的并发用户访问你的系统。
 locust 的并发机制采用协程（gevent）的机制，协程避免了系统级资源调度，可以大幅提高单机的并发能力
-#locust执行命令
+# locust执行命令
 *locust -f .\脚本名称 --host=测试网址*
 -f 指定性能测试脚本文件。
 –host 指定被测试应用的URL的地址，注意访问百度使用的HTTPS协议。
-#locust访问地址：
+# locust访问地址：
 http://localhost:8089 （Locust启动网络监控器，默认为端口号为: 8089）
 
-#locust no-web模式：
+# locust no-web模式：
 *locust -f load_test.py --host=https://www.baidu.com --no-web -c 10 -r 2 -t 1m*
 **启动参数：**
 –no-web 表示不使用Web界面运行测试。
@@ -23,7 +23,7 @@ http://localhost:8089 （Locust启动网络监控器，默认为端口号为: 80
 -r 设置每秒启动虚拟用户数。
 -t 设置设置运行时间。
 
-#Locust 分布式运行:
+# Locust 分布式运行:
 在 master 模式下启动 Locust:
 *locust -f my_loucstfile.py --master*
 在每个 slave 中执行(192.168.0.14 替换为你 msater 的IP):
