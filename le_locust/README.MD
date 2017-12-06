@@ -2,11 +2,11 @@
 -------
 
 ## 学习网址
-[Locust](http://www.testclass.net/locust/)  
-[Locust Documentation](https://docs.locust.io/en/latest/index.html)
+[Locust中文](http://www.testclass.net/locust/)  
+[Locust Documentation英文](https://docs.locust.io/en/latest/index.html)
 
 ## locust是什么
-locust是一个开源性能测试工具，它使用 Python 代码来定义用户行为。用它可以模拟百万计的并发用户访问你的系统。
+locust是一个开源性能测试工具，它使用 Python 代码来定义用户行为。用它可以模拟百万计的并发用户访问你的系统。  
 locust 的并发机制采用协程（gevent）的机制，协程避免了系统级资源调度，可以大幅提高单机的并发能力
 ## locust执行命令
 *locust -f .\脚本名称 --host=测试网址*  
