@@ -2,7 +2,7 @@
 ---------------
 
 ## 术语介绍
-![git图](https://github.com/moon8787/learn/le_git/image/git_flow.png)  
+![Git原理图](https://github.com/moon8787/learn/raw/master/le_git/image/git_flow.png)  
 Workspace：工作区  
 Index/Stage：暂存区，也叫索引  
 Repository：仓库区（或本地仓库），也存储库  
